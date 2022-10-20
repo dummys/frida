@@ -424,6 +424,11 @@ case $host_os in
         host_arch_flags="-march=z10 -m64"
         host_toolprefix="s390x-linux-$frida_libc-"
         ;;
+      ppc)
+	host_toolprefix="powerpc-linux-$frida_libc-"
+        
+	meson_host_cpu_family="ppc"
+	meson_host_cpu="ppc"
     esac
 
     libgcc_flags="-static-libgcc"

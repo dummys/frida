@@ -447,6 +447,7 @@ capstone_archs := $(shell echo $(host_arch) | sed $(sed_regex_option) \
 		-e 's,^arm64eoabi$$,arm64,' \
 		-e 's,^mips.*,mips,' \
 		-e 's,^s390x$$,sysz,' \
+		-e 's,^ppc$$,powerpc,' \
 	)
 
 quickjs_name = QuickJS
